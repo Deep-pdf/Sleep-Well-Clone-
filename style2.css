@@ -1,0 +1,69 @@
+@media (max-width: 768px) {
+    main {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        max-width: 90vw;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px){
+    nav img{
+        width: 110px;
+    }
+}
+
+@media (max-width: 768px){
+    nav button{
+        width: 80px;
+    }
+}
+
+@media (max-width: 768px){
+    .button-text{
+        font-size: 14px;
+    }
+} 
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero p:nth-of-type(2) {
+        padding: 30px;
+    }
+
+    .hero p:nth-of-type(2) {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .email-input {
+        width: 90%;
+        height: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .get-started {
+        width: 45%;
+        height: 70px;
+        font-size: 18px;
+    }
+}

@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Focus email input on Get Started click
     const getStartedBtn = document.querySelector('.get-started');
     const emailInput = document.querySelector('.email-input');
     if(getStartedBtn && emailInput) {
@@ -6,4 +7,30 @@ document.addEventListener('DOMContentLoaded', function() {
             emailInput.focus();
         });
     }
+
+    // Dropdown language selection
+    const dropbtn = document.querySelector('.dropbtn');
+    const dropdown = document.querySelector('.dropdown');
+    const dropdownContent = document.querySelector('.dropdown-content');
+    const dropdownLinks = document.querySelectorAll('.dropdown-content a');
+
+    // Toggle dropdown on button click
+    dropbtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Select option and close dropdown
+    dropdownLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            dropbtn.textContent = this.textContent;
+            dropdownContent.style.display = 'none';
+        });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        dropdownContent.style.display = 'none';
+    });
 });
