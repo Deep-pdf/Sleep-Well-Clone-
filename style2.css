@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
     main {
-        height: 60vh;
+        height: 65vh;
     }
 }
 
@@ -11,23 +11,31 @@
     }
 }
 
-@media (max-width: 768px){
-    nav img{
-        width: 110px;
+@media (max-width: 768px) {
+    nav img {
+        width: 100px;
     }
 }
 
-@media (max-width: 768px){
-    nav button{
-        width: 80px;
+@media (max-width: 768px) {
+    nav button {
+        width: 60px;
+        height: 30px;
     }
 }
 
-@media (max-width: 768px){
-    .button-text{
-        font-size: 14px;
+@media (max-width: 768px) {
+    .button-text {
+        font-size: 12px;
     }
-} 
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 90%;
+
+    }
+}
 
 @media (max-width: 768px) {
     .hero h1 {
@@ -36,20 +44,26 @@
 }
 
 @media (max-width: 768px) {
-    .hero p:nth-of-type(2) {
-        padding: 30px;
+    .hero p:nth-of-type(1) {
+        font-size: 14px;
+        padding: 10px;
     }
+}
 
+@media (max-width: 768px) {
     .hero p:nth-of-type(2) {
-        font-size: 20px;
+        font-size: 18px;
+        padding: 10px;
+        margin-left: 35px;
+        margin-right: 35px;
     }
 }
 
 @media (max-width: 768px) {
     .form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -65,5 +79,72 @@
         width: 45%;
         height: 70px;
         font-size: 18px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .trending-now {
+        font-size: 150%;
+        font-size: 140%;
+        margin-top: 7%;
+        margin-left: 3%;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        gap: 3%;
+        max-width: 80vw;
+        /* margin: auto; */
+        transition: transform 0.4s ease-in-out;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        display: flex;
+        padding: 3%;
+
+        /* justify-content: center; */
+        /* width: 118px; */
+        height: 168px;
+        gap: 16px;
+        font-size: 18px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        /* padding-bottom: 10px; */
+    }
+}
+
+@media (max-width: 768px) {
+    .card img {
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-button {
+        position: absolute;
+        top: 35%;
+        right: 3%;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carouse2-button {
+        position: absolute;
+        top: 35%;
+        left: 3%;
+        font-size: 16px;
+        margin-top: 5px;
     }
 }
