@@ -195,8 +195,14 @@ nav button {
 
 .seperate {
     width: 100%;
-    height: 20px;
+    height: 18px;
     background-color: gray;
+}
+
+.seperate2{
+    width: 100%;
+    height: 8px;
+    background-color: red;
 }
 
 .trending {
@@ -384,18 +390,107 @@ nav button {
 .bars.active .answer {
     max-height: 500px;
     /* Adjust as needed */
-    padding: 15px;
+    padding-bottom: 15px;
 }
 
 .questions{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
 }
 
 .icon{
     font-size: 60px;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     color: white;
     padding-right: 20px;
+}
+
+.end p{
+    color: white;
+    font-family:  "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+
+}
+
+.end{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.email2{
+    width: 600px;
+}
+
+.get2{
+    width: 220px;
+}
+
+.call{
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(173, 173, 173);
+    padding-left: 160px;
+    padding-top: 70px;
+}
+
+.call :nth-child(2){
+    text-decoration: underline;
+}
+
+.group{
+    color: rgb(173, 173, 173);
+    width: 82vw;
+    margin: auto;
+    padding: 40px;
+}
+
+table{
+    /* border: 5px solid white; */
+    border-collapse: collapse;
+}
+
+td{
+    /* border: 5px solid white; */
+    width: 350px;
+    height: 40px;
+    text-decoration: underline;
+    /* cursor: pointer; */
+}
+
+tr span{
+    cursor: pointer;
+}
+
+.khatam nav{
+    margin-left: 150px;
+}
+
+.sleep{
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    padding-top: 30px;
+    margin-left: 155px;
+}
+
+.deepu{
+    color: rgb(173, 173, 173);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    padding-top: 50px;
+    margin-left: 155px;
+    margin-bottom: 100px;
 }

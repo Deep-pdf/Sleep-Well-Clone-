@@ -8,30 +8,42 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Dropdown language selection
-    const dropbtn = document.querySelector('.dropbtn');
-    const dropdown = document.querySelector('.dropdown');
-    const dropdownContent = document.querySelector('.dropdown-content');
-    const dropdownLinks = document.querySelectorAll('.dropdown-content a');
+    // Get all dropdowns
+    const dropdowns = document.querySelectorAll('.dropdown');
 
-    // Toggle dropdown on button click
-    dropbtn.addEventListener('click', function (e) {
-        e.stopPropagation();
-        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-    });
+    dropdowns.forEach(function (dropdown) {
+        const dropbtn = dropdown.querySelector('.dropbtn');
+        const dropdownContent = dropdown.querySelector('.dropdown-content');
+        const dropdownLinks = dropdownContent.querySelectorAll('a');
 
-    // Select option and close dropdown
-    dropdownLinks.forEach(function (link) {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-            dropbtn.textContent = this.textContent;
-            dropdownContent.style.display = 'none';
+        // Toggle dropdown on button click
+        dropbtn.addEventListener('click', function (e) {
+            e.stopPropagation();
+
+            // Close all other dropdowns
+            document.querySelectorAll('.dropdown-content').forEach(dc => {
+                if (dc !== dropdownContent) dc.style.display = 'none';
+            });
+
+            // Toggle current dropdown
+            dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Handle option click
+        dropdownLinks.forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                dropbtn.textContent = this.textContent;
+                dropdownContent.style.display = 'none';
+            });
         });
     });
 
-    // Close dropdown when clicking outside
-    document.addEventListener('click', function (e) {
-        dropdownContent.style.display = 'none';
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function () {
+        document.querySelectorAll('.dropdown-content').forEach(dc => {
+            dc.style.display = 'none';
+        });
     });
 });
 
