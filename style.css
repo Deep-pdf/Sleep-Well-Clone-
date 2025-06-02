@@ -73,7 +73,7 @@ nav button {
 
 }
 
-.button-text{
+.button-text {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -199,7 +199,7 @@ nav button {
     background-color: gray;
 }
 
-.trending{
+.trending {
     position: relative;
     overflow: hidden;
 }
@@ -208,8 +208,12 @@ nav button {
     color: white;
     margin-left: 7%;
     margin-top: 4%;
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 2%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
 }
 
 /* .card{
@@ -223,12 +227,12 @@ nav button {
 
 .card img {
     display: block;
-    width:  auto;
+    width: auto;
     height: 250px;
     border-radius: 8px;
 }
 
-.carousel-button{
+.carousel-button {
     position: absolute;
     height: 120px;
     border-radius: 10px;
@@ -245,7 +249,7 @@ nav button {
     z-index: 1;
 }
 
-.carouse2-button{
+.carouse2-button {
     position: absolute;
     height: 120px;
     border-radius: 10px;
@@ -260,4 +264,138 @@ nav button {
     padding: 8px 2px;
     cursor: pointer;
     z-index: 1;
+}
+
+.image-box {
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-box:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.more-reason {
+    color: white;
+    margin-left: 7%;
+    margin-top: 3.5%;
+    font-size: 28px;
+    margin-bottom: 1%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.banners {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 90vw;
+    gap: 20px;
+}
+
+.more-cont {
+    position: relative;
+    width: 22%;
+    height: 250px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgb(0, 0, 52), rgb(49, 0, 49));
+}
+
+.more-cont h2 {
+    color: rgba(255, 255, 255, 0.874);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+    padding: 15px;
+    padding-top: 20px;
+}
+
+.more-cont p {
+    color: rgba(255, 255, 255, 0.662);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 15px;
+    padding-right: 30px;
+    font-size: 16px;
+}
+
+.more-img {
+    width: 90px;
+    position: absolute;
+    right: 20px;
+    bottom: 3%;
+    /* padding: 20px; */
+}
+
+.questions-text {
+    color: white;
+    margin-left: 7%;
+    margin-top: 3.5%;
+    font-size: 28px;
+    margin-bottom: 1%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.Qbars {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 82vw;
+    gap: 8px;
+}
+
+.bars {
+    /* height: 84px; */
+    background-color: rgba(54, 54, 54, 0.792);
+    /* border: 2px solid red; */
+    transition: background-color 0.3s;
+    overflow: hidden;
+}
+
+.bars h2 {
+    color: white;
+    padding: 30px;
+}
+
+.bars:hover {
+    background-color: rgba(84, 84, 84, 0.792);
+    cursor: pointer;
+
+}
+
+.answer {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    transition: max-height 0.2s ease, padding 0.2s ease;
+
+}
+
+.bars.active .answer {
+    max-height: 500px;
+    /* Adjust as needed */
+    padding: 15px;
+}
+
+.questions{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.icon{
+    font-size: 60px;
+    padding-top: 10px;
+    color: white;
+    padding-right: 20px;
 }

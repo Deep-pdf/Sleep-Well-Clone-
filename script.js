@@ -56,4 +56,17 @@ document.addEventListener("DOMContentLoaded", () => {
             behavior: "smooth"
         });
     };
+
+    const accordionItems = document.querySelectorAll('.bars');
+
+    accordionItems.forEach(item => {
+        const question = item.querySelector('.questions')
+        const icon = question.querySelector('.icon');
+
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            item.classList.toggle('active');
+            icon.textContent = isActive ? '+' : '×';
+        });
+    });
 });
